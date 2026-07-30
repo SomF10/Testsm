@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="A simple website built from a standard HTML5 template.">
+    <title>My Website</title>
+    <link rel="icon" href="favicon.ico">
+    <style>
+      :root{--bg:#f8fafc;--card:#ffffff;--muted:#6b7280;--accent:#2563eb}
+      html,body{height:100%;margin:0;font-family:Inter,system-ui,Segoe UI,Roboto,"Helvetica Neue",Arial}
+      body{background:var(--bg);color:#111827;display:flex;flex-direction:column}
+      .container{max-width:960px;margin:3rem auto;padding:1rem}
+      header{display:flex;align-items:center;justify-content:space-between}
+      nav a{margin-left:1rem;color:var(--muted);text-decoration:none}
+      .hero{background:linear-gradient(90deg,rgba(37,99,235,0.08),transparent);padding:2rem;border-radius:8px}
+      footer{margin-top:auto;padding:2rem 1rem;text-align:center;color:var(--muted);font-size:.9rem}
+      .btn{display:inline-block;padding:.5rem .9rem;background:var(--accent);color:#fff;border-radius:6px;text-decoration:none}
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>My Website</h1>
+        <nav>
+          <a href="#">Home</a>
+          <a href="#about">About</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </header>
+
+      <main class="hero" role="main">
+        <h2>Welcome</h2>
+        <p style="color:var(--muted)">This is a simple, responsive HTML5 template to get your website started.</p>
+        <p><a class="btn" href="#about">Learn more</a></p>
+      </main>
+
+      <section id="about" style="margin-top:1.5rem;background:var(--card);padding:1rem;border-radius:8px">
+        <h3>About</h3>
+        <p style="color:var(--muted)">Replace this content with your project description, features, and links.</p>
+      </section>
+
+      <section id="contact" style="margin-top:1rem">
+        <h3>Contact</h3>
+        <p style="color:var(--muted)">Email: <a href="mailto:hello@example.com">hello@example.com</a></p>
+      </section>
+
+      <footer>
+        © <span id="year"></span> My Website — Built with a standard template
+      </footer>
+    </div>
+    <script>
+      document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
